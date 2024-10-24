@@ -3,19 +3,19 @@
 
 
 function guessNumberGame(){
-    let myPrompt = prompt("Guess what number im thining off 1-10");
+    let myPrompt = prompt("Can you guess the number I'm thinking of between 1 and 10?");
     const randomNumber = Math.floor((Math.random() * 10) + 1);
     console.log(randomNumber)
     let promptNumber = Number(myPrompt)
     while(promptNumber !== randomNumber){
         if(promptNumber > randomNumber){
-            myPrompt = prompt("thats too high try again")
+            myPrompt = prompt("That's too high, try again.")
         }else if (promptNumber < randomNumber){
-            myPrompt = prompt("thats too low try again");
+            myPrompt = prompt("That's too low, try again.");
         }
         promptNumber = Number(myPrompt); 
    }
-   alert(`Nice that is correct i was thining of ${promptNumber}`)
+   alert(`You got it correct i was thinking of ${promptNumber}`)
 }
 
 
