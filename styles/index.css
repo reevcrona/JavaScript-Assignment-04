@@ -7,12 +7,22 @@ body{
     align-items: center;
     flex-direction: column;
     min-height: 100vh;
+    background-color: black;
 
+}
+.header{
+    color: white;
 }
 .card-container{
     display: flex;
     justify-content: center;
     align-items: center;
+    color:white;
+    gap: 20px;
+    
+}
+.card{
+    background-color: green;
 }
 img{
     width: 100px;
