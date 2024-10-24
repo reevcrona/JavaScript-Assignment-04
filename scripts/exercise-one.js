@@ -5,7 +5,7 @@
 function guessNumberGame(){
     let myPrompt = prompt("Can you guess the number I'm thinking of between 1 and 10?");
     const randomNumber = Math.floor((Math.random() * 10) + 1);
-    console.log(randomNumber)
+    
     let promptNumber = Number(myPrompt)
     while(promptNumber !== randomNumber){
         if(promptNumber > randomNumber){
